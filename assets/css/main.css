@@ -30,7 +30,7 @@
 body { font-family: 'Inconsolata', 'Monaco'; font-size: 15px; }
 section#hero { width: 70%; margin: 0 auto; padding-top: 60px; }
 section#manifest { width: 70%; margin: 0 auto; padding-top: 20px; display: flex; justify-content: space-between; }
-div.logo { font-size: 250px; width: 100%; text-align: center; }
+div.logo { font-size: 200px; font-size: 10.5vw; width: 100%; text-align: center; }
 div.logo i.fa-heart { color: red; }
 div.tagline { text-align: center; }
 div.tagline h1 { font-size: 55px; padding-bottom:0; margin-bottom: 0; }
@@ -41,3 +41,7 @@ div.snippetbox p { padding: 10px; }
 footer { width: 10%; margin: 0 auto; border-top: 1px solid #ccc; position: absolute; bottom: 10px; left: 50%; margin-left: -5%; }
 footer p { padding: 0; text-align: center; }
 footer p i.fa-heart { color: red; }
+
+@media screen and (max-height: 800px){
+  footer { position: relative; margin-top: 50px; }
+}
