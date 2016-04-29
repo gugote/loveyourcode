@@ -1,0 +1,43 @@
+/* BASIC */
+.cleaner { clear: both; }
+.dimmer { background-color:#000; filter:alpha(opacity=75); -moz-opacity: 0.75; opacity: 0.75; height:500px;position:absolute;top:0;width:100%; }
+.noborder { border: none !important; }
+.noborderL { border-left: none !important; }
+.noborderR { border-right: none !important; }
+.noborderT { border-top: none !important; }
+.noborderB { border-bottom: none !important; }
+.nomargin { margin: 0!important; }
+.nomarginL { margin-left: 0 !important; }
+.nomarginR { margin-right: 0 !important; }
+.nomarginT { margin-top: 0 !important; }
+.nomarginB { margin-bottom: 0 !important; }
+.nopadding { padding: 0 !important; }
+.nopaddingL { padding-left: 0 !important; }
+.nopaddingR { padding-right: 0 !important; }
+.nopaddingT { padding-top: 0 !important; }
+.nopaddingB { padding-bottom: 0 !important; }
+.floaterL { float: left; }
+.floaterR { float: right; }
+.centered { text-align: center; }
+.aright { text-align: right; }
+.aleft { text-align: left; }
+*+html .cf {display:inline-block;}
+* html .cf {height:1%}
+.cf:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.ir { background-color: transparent; border: 0; overflow: hidden; /* IE 6/7 fallback */ text-indent: -9999px; }
+.ir:before { content: ""; display: block; width: 0; height: 100%; }
+
+body { font-family: 'Inconsolata', 'Monaco'; font-size: 15px; }
+section#hero { width: 70%; margin: 0 auto; padding-top: 60px; }
+section#manifest { width: 70%; margin: 0 auto; padding-top: 20px; display: flex; justify-content: space-between; }
+div.logo { font-size: 250px; width: 100%; text-align: center; }
+div.logo i.fa-heart { color: red; }
+div.tagline { text-align: center; }
+div.tagline h1 { font-size: 55px; padding-bottom:0; margin-bottom: 0; }
+div.col { padding: 0 30px; width: 50%; }
+div.snippetbox { background: #eaeaea; border-radius: 3px; margin: 10px 0; }
+div.snippetbox p { padding: 10px; }
+
+footer { width: 10%; margin: 0 auto; border-top: 1px solid #ccc; position: absolute; bottom: 10px; left: 50%; margin-left: -5%; }
+footer p { padding: 0; text-align: center; }
+footer p i.fa-heart { color: red; }
