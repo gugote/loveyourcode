@@ -28,20 +28,37 @@
 .ir:before { content: ""; display: block; width: 0; height: 100%; }
 
 body { font-family: 'Inconsolata', 'Monaco'; font-size: 15px; }
-section#hero { width: 70%; margin: 0 auto; padding-top: 60px; }
-section#manifest { width: 70%; margin: 0 auto; padding-top: 20px; display: flex; justify-content: space-between; }
-div.logo { font-size: 200px; font-size: 10.5vw; width: 100%; text-align: center; }
-div.logo i.fa-heart { color: red; }
-div.tagline { text-align: center; }
-div.tagline h1 { font-size: 55px; padding-bottom:0; margin-bottom: 0; }
-div.col { padding: 0 30px; width: 50%; }
-div.snippetbox { background: #eaeaea; border-radius: 3px; margin: 10px 0; }
-div.snippetbox p { padding: 10px; }
 
-footer { width: 10%; margin: 0 auto; border-top: 1px solid #ccc; position: absolute; bottom: 10px; left: 50%; margin-left: -5%; }
-footer p { padding: 0; text-align: center; }
-footer p i.fa-heart { color: red; }
+@media screen and (min-width: 320px){
+  section#hero { width: 100%; margin: 0 auto; padding-top: 30px; }
+  section#manifest { width: 100%; margin: 0 auto; padding-top: 20px; display: flex; justify-content: space-between; }
+  div.logo { font-size: 25vw; width: 60%; margin: 0 auto; }
+  div.logo i { float: left; margin-right: 10px; }
+  div.logo i:last-child { margin: 0; }
+  div.logo i.fa-heart { color: red; }
+  div.tagline { text-align: center; }
+  div.tagline h1 { font-size: 35px; padding-bottom:0; margin-bottom: 0; }
+  div.col { padding: 0 30px 40px; width: 100%; }
+  div.col h3 { margin-top: 30px; }
+  div.col .thelove { margin: 40px 0; }
+  div.col p i.fa-heart { color: red; margin: 0 3px; }
+  div.col p.padded { padding: 0 15%; }
+  div.snippetbox { background: #eaeaea; border-radius: 3px; margin: 10px 0; padding: 10px; box-sizing: border-box; }
+  div.snippetbox p { padding: 0; margin: 0; }
+  div.snippetbox p.padded { padding: 0 10px; }
 
-@media screen and (max-height: 800px){
-  footer { position: relative; margin-top: 50px; }
+  footer { position: fixed; top: 3px; right: 8px; width: 20px; }
+  footer p { padding: 0; margin: 0; }
+}
+
+@media screen and (min-width: 800px) {
+  section#hero { width: 750px; margin: 0 auto; }
+  section#manifest { width: 750px; margin: 0 auto; }
+  div.logo { width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; }
+  div.logo:after { content: ''; }
+}
+
+@media screen and (min-width: 1024px){
+  div.logo { font-size: 220px; }
+  div.tagline h1 { font-size: 40px; margin-bottom: 60px; }
 }

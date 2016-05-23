@@ -8,35 +8,48 @@
   <script src="/assets/js/main.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <!-- Font Awesome by Dave Gandy - http://fontawesome.io -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
   <section id="hero">
-    <div class="logo"><i class="fa fa-heart"></i> <i class="fa fa-code"></i></div>
+    <div class="logo cf"><i class="fa fa-heart"></i> <i class="fa fa-code"></i></div>
     <div class="tagline">
       <h1>Love Your Code</h1>
-      <h2>We are designers. And we love to code.</h2>
     </div>
   </section>
   <section id="manifest">
     <div class="col">
+      <h2>We are designers and we love to Code.</h2>
       <h3>Manifest</h3>
-      <p>Love is a powerful thing, we risk to say love is one of the most powerful things in the world.</p>
-      <p>If you look closely all around you, a lot of people is doing amazing things in the name of Love. Love for their families, love for the sport, love for the nature.</p>
-      <p><strong>We do it everyday, for the Love for the Code.</strong></p>
+      <p>If you look closely, all around you a lot of people are doing amazing things in the name of Love.. Love for their families, Love for the sport, Love for the nature.</p>
+      <div class="thelove">
+        <p class="centered"><i class="fa fa-heart"></i><i class="fa fa-code"></i><i class="fa fa-heart"></i></p>
+        <p class="centered padded"><strong>We do it everyday, for the Love for Code.</strong></p>
+        <p class="centered"><i class="fa fa-heart"></i><i class="fa fa-code"></i><i class="fa fa-heart"></i></p>
+      </div>
       <p>This is an ode for the "Rare Unicorn", an ode for that "One Man Show", and ode for all of us that were born as designers but learned to code just for love.</p>
-      <p>gugote - mbavio</p>
-    </div>
-    <div class="col">
       <h3>Support</h3>
       <p>Show your love to your code, using the small tagline at your footer, header, sidebar, well.. you are a designer. We don't need to tell you where you should put it.</p>
+      <p>First you include the <a href="https://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> link at the head of your site</p>
+      <p>Then add the snippet:</p>
       <div class="snippetbox">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, numquam officia asperiores inventore? Consequuntur ad voluptas provident eligendi quod voluptate repellat voluptates officiis ipsum, nostrum doloremque facilis excepturi. Asperiores, hic.</p>
+        <p>&lt;div class="loveyourcode"&gt;</p>
+        <p class="padded">&lt;i class="fa fa-heart"&gt;&lt;/i&gt;</p>
+        <p class="padded">&lt;i class="fa fa-code"&gt;&lt;/i&gt;</p>
+        <p>&lt;/div&gt;</p>
       </div>
+      <p>and a little bit of css to make the magic:</p>
+      <div class="snippetbox">
+        <p>.loveyourcode i { font-size: 15px; } </p>
+        <p>.loveyourcode i.fa-heart { color: red; }</p>
+      </div>
+      <p>Remember to place it whatever you like.</p>
+      <p>hashboxed.com - 2016</p>
     </div>
   </section>
   <footer>
-    <p><i class="fa fa-heart"></i> <i class="fa fa-code"></i></p>
+    <p><a href="http://hashboxed.com">[#]</a></p>
   </footer>
 </body>
 </html>
