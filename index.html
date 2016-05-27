@@ -51,7 +51,7 @@
       <h4>Using the SVG tag <small>(thanks <a href="http://twitter.com/julianlengfeldr" target="_blank">@julianlengfeldr</a>!)</small></h4>
       <p>First you insert the SVG ( or paste the svg code inline )</p>
       <div class="snippetbox">
-        <p><a href="assets/love-your-code.png"><img src="assets/love-your-code.svg" alt=""> get the svg</a></p>
+        <p><a href="https://github.com/gugote/loveyourcode/blob/gh-pages/assets/love-your-code.svg"><img src="assets/love-your-code.svg" alt=""> get the svg</a></p>
       </div>
       <p>Then apply some css to it:</p>
       <div class="snippetbox">
@@ -61,30 +61,45 @@
       <div class="snippetbox">
         <p>.heart {</p>
         <p class="padded">color: red;</p>
-        <p class="padded">transform-origin: 50% 50%;</p> <p class="padded">transform: scale(.9);</p>
+        <p class="padded">-webkit-transform-origin: 50% 50%;</p>
+        <p class="padded">transform-origin: 50% 50%;</p>
+        <p class="padded">-webkit-transform: scale(0.9);</p>
+        <p class="padded">transform: scale(0.9);</p>
+        <p class="padded">-webkit-animation-name: beat;</p>
         <p class="padded">animation-name: beat;</p>
+        <p class="padded">-webkit-animation-duration: 1s;</p>
         <p class="padded">animation-duration: 1s;</p>
+        <p class="padded">-webkit-animation-delay: .35s;</p>
         <p class="padded">animation-delay: .35s;</p>
+        <p class="padded">-webkit-animation-iteration-count: infinite;</p>
         <p class="padded">animation-iteration-count: infinite;</p>
+        <p class="padded">-webkit-animation-timing-function: ease-in-out;</p>
         <p class="padded">animation-timing-function: ease-in-out;</p>
+        <p class="padded">-webkit-animation-play-state: running;</p>
         <p class="padded">animation-play-state: running;</p>
+        <p class="padded">-webkit-animation-fill-mode: forwards;</p>
         <p class="padded">animation-fill-mode: forwards;</p>
         <p>}</p>
         <br>
         <p>@keyframes beat {</p>
         <p class="padded">0% {</p>
+        <p class="doublepadded">-webkit-transform: scale(.9);</p>
         <p class="doublepadded">transform: scale(.9);</p>
         <p class="padded">}</p>
         <p class="padded">15% {</p>
+        <p class="doublepadded">-webkit-transform: scale(.93);</p>
         <p class="doublepadded">transform: scale(.93);</p>
         <p class="padded">}</p>
         <p class="padded">30% {</p>
+        <p class="doublepadded">-webkit-transform: scale(.88);</p>
         <p class="doublepadded">transform: scale(.88);</p>
         <p class="padded">}</p>
         <p class="padded">45% {</p>
+        <p class="doublepadded">-webkit-transform: scale(.88);</p>
         <p class="doublepadded">transform: scale(.93);</p>
         <p class="padded">}</p>
         <p class="padded">60% {</p>
+        <p class="doublepadded">-webkit-transform: scale(.9);</p>
         <p class="doublepadded">transform: scale(.9);</p>
         <p class="padded">}</p>
         <p>}</p>
