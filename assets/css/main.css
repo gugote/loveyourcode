@@ -32,33 +32,58 @@ body { font-family: 'Inconsolata', 'Monaco'; font-size: 15px; }
 @media screen and (min-width: 320px){
   section#hero { width: 100%; margin: 0 auto; padding-top: 30px; }
   section#manifest { width: 100%; margin: 0 auto; padding-top: 20px; display: flex; justify-content: space-between; }
-  div.logo { font-size: 25vw; width: 60%; margin: 0 auto; }
-  div.logo i { float: left; margin-right: 10px; }
-  div.logo i:last-child { margin: 0; }
-  div.logo i.fa-heart { color: red; }
+  div.logo { width: 60%; margin: 0 auto; }
+  div.logo svg { width: 100%; }
   div.tagline { text-align: center; }
   div.tagline h1 { font-size: 35px; padding-bottom:0; margin-bottom: 0; }
   div.col { padding: 0 30px 40px; width: 100%; }
   div.col h3 { margin-top: 30px; }
   div.col .thelove { margin: 40px 0; }
+  div.col .thelove img { width: 32px; }
   div.col p i.fa-heart { color: red; margin: 0 3px; }
   div.col p.padded { padding: 0 15%; }
   div.snippetbox { background: #eaeaea; border-radius: 3px; margin: 10px 0; padding: 10px; box-sizing: border-box; }
   div.snippetbox p { padding: 0; margin: 0; }
   div.snippetbox p.padded { padding: 0 10px; }
+  div.snippetbox p.doublepadded { padding: 0 20px; }
+  div.snippetbox p img { width: 30px; vertical-align: middle; position: relative; top: -1px; }
 
-  footer { position: fixed; top: 3px; right: 8px; width: 20px; }
-  footer p { padding: 0; margin: 0; }
+  div.hashboxed { position: fixed; top: 3px; right: 8px; width: 20px; }
+  div.hashboxed p { padding: 0; margin: 0; }
+  footer { width: 100%; text-align: center;
+    p { margin: 10px 0 0; }
+  }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   section#hero { width: 750px; margin: 0 auto; }
   section#manifest { width: 750px; margin: 0 auto; }
-  div.logo { width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; }
+  div.logo { width: 50%; display: flex; flex-direction: row; align-items: center; justify-content: center; }
   div.logo:after { content: ''; }
 }
 
 @media screen and (min-width: 1024px){
   div.logo { font-size: 220px; }
   div.tagline h1 { font-size: 40px; margin-bottom: 60px; }
+}
+
+/* HEART ANIMATION - Thanks to @julianlengfeldr */
+.heart { color: red; transform-origin: 50% 50%; transform: scale(.9); animation-name: beat; animation-duration: 1s; animation-delay: .35s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-play-state: running; animation-fill-mode: forwards; }
+
+@keyframes beat {
+  0% {
+    transform: scale(.9);
+  }
+  15% {
+    transform: scale(.93);
+  }
+  30% {
+    transform: scale(.88);
+  }
+  45% {
+    transform: scale(.93);
+  }
+  60% {
+    transform: scale(.9);
+  }
 }

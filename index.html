@@ -11,7 +11,10 @@
 </head>
 <body>
   <section id="hero">
-    <div class="logo cf"><i class="fa fa-heart"></i> <i class="fa fa-code"></i></div>
+    <div class="logo cf"><svg viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg">
+      <path class="heart" d="M9.22 2.2c.677-.65 1.41-1.224 2.24-1.666.904-.48 1.865-.612 2.875-.482.784.1 1.524.313 2.185.76.943.637 1.494 1.532 1.74 2.63.41 1.83-.103 3.422-1.225 4.867-.615.79-1.35 1.46-2.068 2.15-1.745 1.68-3.494 3.36-5.24 5.04-.366.35-.694.34-1.058-.01L2.38 9.43C1.333 8.426.46 7.296.15 5.85c-.36-1.66-.104-3.218 1.1-4.51C1.894.646 2.728.297 3.645.11c1.642-.334 3.086.092 4.38 1.112.398.314.786.64 1.194.975" fill="#F00"/>
+      <path d="M31.666 2.036c-.026.097-.06.224-.096.35L27.873 15.18c-.017.06-.034.12-.058.18-.08.193-.216.265-.416.215a14.532 14.532 0 0 1-.55-.15c-.28-.082-.36-.224-.28-.505a87945.586 87945.586 0 0 0 3.77-13.035c.11-.388.21-.445.6-.336.14.04.29.07.44.12.15.05.26.15.27.36m5.01 6.51a80.36 80.36 0 0 0-.8-.79l-3.13-3.13c-.3-.3-.3-.42 0-.71.1-.11.21-.22.32-.33.23-.22.38-.22.61-.01l.07.07 4.51 4.51c.32.32.31.43-.01.75l-4.53 4.52c-.3.3-.42.3-.71.01a12.11 12.11 0 0 1-.34-.34c-.22-.22-.22-.36 0-.58l3.47-3.48c.16-.16.32-.32.51-.5m-11.2 3.92a1057.31 1057.31 0 0 0-3.35-3.35l-.58-.58 1.14-1.14 2.76-2.76c.05-.05.1-.1.14-.15.13-.16.13-.31-.01-.47a9.43 9.43 0 0 0-.4-.4c-.29-.29-.41-.29-.69-.01L19.91 8.2c-.275.275-.272.41.01.694l4.556 4.553c.025.025.048.05.074.074.207.2.355.2.56.01.123-.11.24-.23.357-.35.292-.29.294-.4.006-.69" fill="#000"/>
+    </svg></div>
     <div class="tagline">
       <h1>Love Your Code</h1>
     </div>
@@ -22,13 +25,55 @@
       <h3>Manifest</h3>
       <p>If you look closely, all around you a lot of people are doing amazing things in the name of Love.. Love for their families, Love for the sport, Love for the nature.</p>
       <div class="thelove">
-        <p class="centered"><i class="fa fa-heart"></i><i class="fa fa-code"></i></p>
+        <p class="centered"><img src="assets/love-your-code.svg" alt=""></p>
         <p class="centered padded"><strong>We do it everyday, for the Love for Code.</strong></p>
-        <p class="centered"><i class="fa fa-heart"></i><i class="fa fa-code"></i></p>
+        <p class="centered"><img src="assets/love-your-code.svg" alt=""></p>
       </div>
       <p>This is an ode for the "Rare Unicorn", an ode for that "One Man Show", an ode for all of us that were born as designers but learned to code just for love.</p>
       <h3>Support</h3>
       <p>Show your love to your code using the small tagline at your footer, header, sidebar, well.. you are a designer. We don't need to tell you where you should put it.</p>
+      <h4>Using the SVG tag <small>(thanks <a href="http://twitter.com/julianlengfeldr" target="_blank">@julianlengfeldr</a>!)</small></h4>
+      <p>First you insert the SVG ( or paste the svg code inline )</p>
+      <div class="snippetbox">
+        <p><a href="assets/love-your-code.png"><img src="assets/love-your-code.svg" alt=""> get the svg</a></p>
+      </div>
+      <p>Then apply some css to it:</p>
+      <div class="snippetbox">
+        <p>.heart { color: red; }</p>
+      </div>
+      <p>and some extra points if you animate it:</p>
+      <div class="snippetbox">
+        <p>.heart {</p>
+        <p class="padded">color: red;</p>
+        <p class="padded">transform-origin: 50% 50%;</p> <p class="padded">transform: scale(.9);</p>
+        <p class="padded">animation-name: beat;</p>
+        <p class="padded">animation-duration: 1s;</p>
+        <p class="padded">animation-delay: .35s;</p>
+        <p class="padded">animation-iteration-count: infinite;</p>
+        <p class="padded">animation-timing-function: ease-in-out;</p>
+        <p class="padded">animation-play-state: running;</p>
+        <p class="padded">animation-fill-mode: forwards;</p>
+        <p>}</p>
+        <br>
+        <p>@keyframes beat {</p>
+        <p class="padded">0% {</p>
+        <p class="doublepadded">transform: scale(.9);</p>
+        <p class="padded">}</p>
+        <p class="padded">15% {</p>
+        <p class="doublepadded">transform: scale(.93);</p>
+        <p class="padded">}</p>
+        <p class="padded">30% {</p>
+        <p class="doublepadded">transform: scale(.88);</p>
+        <p class="padded">}</p>
+        <p class="padded">45% {</p>
+        <p class="doublepadded">transform: scale(.93);</p>
+        <p class="padded">}</p>
+        <p class="padded">60% {</p>
+        <p class="doublepadded">transform: scale(.9);</p>
+        <p class="padded">}</p>
+        <p>}</p>
+      </div>
+      <h4>Using font awesome</h4>
       <p>First you include the <a href="https://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> link at the head of your site</p>
       <p>Then add the snippet:</p>
       <div class="snippetbox">
@@ -42,12 +87,15 @@
         <p>.loveyourcode i { font-size: 15px; } </p>
         <p>.loveyourcode i.fa-heart { color: red; }</p>
       </div>
-      <p>Remember to place it whatever you like and <a href="mailto:cb@hashboxed.com">send your link</a>, so we can feature you in the hall of fame</p>
-      <p>hashboxed.com - 2016</p>
+      <p>Remember to place it whatever you like and <a href="mailto:cb@hashboxed.com">send your link</a>, so we can feature you in the hall of fame. Also feel free to collaborate on <a href="https://github.com/gugote/loveyourcode">github</a>.</p>
     </div>
   </section>
   <footer>
-    <p><a href="http://hashboxed.com">[#]</a></p>
+    <p class="github"><a href="https://github.com/gugote/loveyourcode"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M21.543,34.568c-0.054,0,0.592,1.367,0.61,1.367  c1.41,2.516,4.128,4.08,8.713,4.514c-0.654,0.488-1.44,1.414-1.549,2.484c-0.823,0.523-2.478,0.696-3.764,0.297  c-1.803-0.559-2.493-4.066-5.192-3.566c-0.584,0.107-0.468,0.486,0.037,0.809c0.823,0.523,1.597,1.178,2.194,2.571  c0.459,1.07,1.423,2.981,4.473,2.981c1.21,0,2.058-0.143,2.058-0.143s0.023,2.731,0.023,3.793c0,1.225-1.682,1.57-1.682,2.159  c0,0.233,0.557,0.255,1.004,0.255c0.884,0,2.723-0.725,2.723-1.998c0-1.011,0.017-4.41,0.017-5.006c0-1.3,0.709-1.712,0.709-1.712  s0.088,6.94-0.169,7.872c-0.302,1.094-0.847,0.939-0.847,1.427c0,0.726,2.214,0.179,2.948-1.416c0.567-1.239,0.319-8.05,0.319-8.05  l0.605-0.012c0,0,0.034,3.117,0.013,4.542c-0.021,1.476-0.122,3.342,0.77,4.222c0.586,0.579,2.484,1.594,2.484,0.666  c0-0.539-1.04-0.982-1.04-2.441v-6.715c0.831,0,0.706,2.208,0.706,2.208l0.061,4.103c0,0-0.184,1.494,1.645,2.119  c0.645,0.223,2.025,0.283,2.09-0.09c0.065-0.373-1.662-0.928-1.678-2.084c-0.01-0.707,0.032-1.119,0.032-4.187  c0-3.068-0.419-4.202-1.88-5.106c4.508-0.455,7.299-1.551,8.658-4.486c0.106,0.003,0.555-1.371,0.496-1.371  c0.305-1.108,0.47-2.419,0.502-3.971c-0.008-4.21-2.058-5.699-2.451-6.398c0.58-3.187-0.098-4.637-0.412-5.135  c-1.162-0.406-4.041,1.045-5.615,2.067c-2.564-0.737-7.986-0.666-10.019,0.19c-3.751-2.639-5.736-2.235-5.736-2.235  s-1.283,2.259-0.339,5.565c-1.234,1.546-2.154,2.64-2.154,5.539C20.906,31.83,21.102,33.292,21.543,34.568z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#333333;"/></svg></a></p>
+    <p>hashboxed.com - 2016</p>
   </footer>
+  <div class="hashboxed">
+    <p><a href="http://hashboxed.com">[#]</a></p>
+  </div>
 </body>
 </html>
